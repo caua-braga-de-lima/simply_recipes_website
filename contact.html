@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Starter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--nav-bar-->
+    <nav class="nav-bar">
+      <!--nav-box(all navigation-area box)-->
+      <div class="nav-box">
+      <!--nav-header-(logo)-->
+        <div class="nav-header"> 
+        <!--header-->
+          <a href="index.html">
+            <img src="/assets/logo.svg" alt="simply-recipes" width="240" height="44" loading="lazy" id = 'nav-logo'>
+          </a>
+          <!--extend-button-->
+          <button class = 'btn nav-btn'>
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <!--list of links-->
+        <div class = 'nav-links'>
+          <a href="index.html" class = 'nav-link'>Home</a>
+          <a href="about.html" class = 'nav-link'>About</a>
+          <a href="tags.html" class = 'nav-link'>Tags</a>
+          <a href="recipes.html" class = 'nav-link'>Recipes</a>
+          <div class="nav-link contact-link">
+            <a href="contact.html" class = 'btn'>Contact</a>
+          </div>
+      </div>
+    </nav>
+    <!--end-of-nav-->
+    <!--main-->
+    <main class="page">
+      <section class="contact-container">
+        <article class="contact-info">
+          <h3>Contact Us!</h3>
+          <p>We are also opened to receive messages. So feel free to text us as well. Questions, suggestions and feedbacks are always welcome!</p>
+          <p>All you have to do is enter your name and e-mail in the fields to the right.</p>
+          <p>Good to remind that rudeness, inappropriate words and hate messages go straight to the trash bin! :)</p>
+        </article>
+        <article>
+          <form action="https://httpbin.org/get" method = 'get'class="form contact-form">
+            <!--single-form-row-->
+            <div class="form-row">
+              <label for="name" class = 'form-label'>Your Name</label>
+              <input type="text" name = 'name' id = 'name' class = 'form-input' required>
+            </div>
+            <!--end-of-single-form-row-->
+            <!--single-form-row-->
+            <div class="form-row">
+              <label for="email" class = 'form-label'>Your email</label>
+              <input type="email" name = 'email' id = 'email' class = 'form-input' required>
+            </div>
+            <!--end-of-single-form-row-->
+            <!--single-form-row-->
+            <div class="form-row">
+              <label for="message" class = 'form-label'>Your message</label>
+              <textarea name="message" id="message" class = 'form-textarea' required></textarea>
+              <button class="btn btn-block" type = 'submit' method = 'post'>submit</button>
+            </div>
+            <!--end-of-single-form-row-->
+          </form>
+        </article>
+      </section>
+      <section class="featured-recipes">
+        <h5 class = 'featured-title'>Look At This Awesomesouce!</h5>
+        <div class="recipes-list">
+          <!--single-recipe-->
+          <a href="/single-recipe.html" class = 'recipe'>
+            <img src="/assets/recipes/recipe-1.jpeg" alt="Carne Assada" title = "Carne Assada" class = 'img recipe-img'/>
+            <h3>Carne Assada</h3>
+            <p>Prep: 15 min | Cook: 5 min</p>
+          </a>
+          <!--end-of-single-recipe-->
+          <!--single-recipe-->
+          <a href="/single-recipe.html" class = 'recipe'>
+            <img src="/assets/recipes/recipe-2.jpeg" alt="Greek Ribs" title = "Greek Ribs" class = 'img recipe-img'/>
+            <h3>Greek Ribs</h3>
+            <p>Prep: 15 min | Cook: 5 min</p>
+          </a>
+          <!--end-of-single-recipe-->
+          <!--single-recipe-->
+          <a href="/single-recipe.html" class = 'recipe'>
+            <img src="/assets/recipes/recipe-3.jpeg" alt="Vegetable Soup" title = "Vegetable Soup" class = 'img recipe-img'/>
+            <h3>Vegetable Soup</h3>
+            <p>Prep: 15 min | Cook: 5 min</p>
+          </a>
+      </section>
+    </main>
+    <!--end-of-main-->
+    <!--footer-->
+    <footer class="page-footer">
+      <p>&copy; <span id = 'date'>2023 </span> <a href="index.html" id = 'footer-logo'>SimplyRecipes</a> Built by Cauã Braga </p>
+    </footer>
+    <script src = '/js/app.js'></script>
+  </body>
+</html>
