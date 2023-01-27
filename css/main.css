@@ -418,10 +418,13 @@ Header
 ===============
 */
 
-.hero
+.hero 
 {
   height: 40vh;
-  background: url('assets/main.jpeg') center/cover no-repeat;
+  background-image: url("/assets/main.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: var(--borderRadius);
   margin-bottom: 2rem;
   position: relative;
