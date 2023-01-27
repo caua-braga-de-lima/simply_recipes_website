@@ -421,7 +421,7 @@ Header
 .hero 
 {
   height: 40vh;
-  background-image: url("/assets/main.jpeg");
+  background-image: url("../assets/main.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
