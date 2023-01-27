@@ -421,7 +421,7 @@ Header
 .hero
 {
   height: 40vh;
-  background: url(/assets/main.jpeg) center/cover no-repeat;
+  background: url('assets/main.jpeg') center/cover no-repeat;
   border-radius: var(--borderRadius);
   margin-bottom: 2rem;
   position: relative;
